@@ -74,6 +74,6 @@ mySprite.setImage(img`
     `)
 mySprite.setPosition(71, 30)
 mySprite.say("I'm excited to learn!")
-music.play(music.melodyPlayable(music.pewPew), music.PlaybackMode.UntilDone)
+music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.UntilDone)
 // Use a screen effect at the end of your project.
 effects.hearts.startScreenEffect()
