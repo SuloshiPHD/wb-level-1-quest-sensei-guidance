@@ -1,0 +1,55 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="hz`b4m}k5^[$Oak:`Rtf">mySprite</variable><variable type="KIND_SpriteKind" id="*G.F]FH(HN[z{WTO1Oh=">Player</variable><variable type="KIND_SpriteKind" id="_2@S0Jpz.:GR)/2,qg_J">Projectile</variable><variable type="KIND_SpriteKind" id="qz-S8bBOY}SiuAey5+Bq">Food</variable><variable type="KIND_SpriteKind" id="~e[!)_Z4!Zxwx(77RPjD">Enemy</variable></variables><block type="pxt-on-start" id="k8XTx(%V1!8C.n9CCXT=" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="fZ8yIg$jf423u3.YFGH4"><value name="color"><shadow type="colorindexpicker" id="3,}aE)qux(|Bt7J)D.tC"><field name="index">6</field></shadow></value><next><block type="gameSplash" id="8:}MT@7mFfX(bL~!2mB,"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><comment pinned="true" h="75" w="424">Use a splash screen at the beginning of your project</comment><value name="title"><shadow type="text" id="Hx%gi#%sj+9Frwx7u94P"><field name="TEXT">My first coding project!</field></shadow></value><next><block type="variables_set" id="XZYi;?pd1[0hK15R^XLr"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field><comment pinned="false" h="61" w="283">Create a sprite</comment><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="douS`cO.:IME#cXs;cTe"><value name="img"><shadow type="screen_image_picker" id="7OIq3Q4Y0v|4c}b)Tyt]"><field name="img">img`
+. . . . f f f f . . . . . 
+. . f f f f f f f f . . . 
+. f f f f f f c f f f . . 
+f f f f f f c c f f f c . 
+f f f c f f f f f f f c . 
+c c c f f f e e f f c c . 
+f f f f f e e f f c c f . 
+f f f b f e e f b f f f . 
+. f 4 1 f 4 4 f 1 4 f . . 
+. f e 4 4 4 4 4 4 e f . . 
+. f f f e e e e f f f . . 
+f e f b 7 7 7 7 b f e f . 
+e 4 f 7 7 7 7 7 7 f 4 e . 
+e e f 6 6 6 6 6 6 f e e . 
+. . . f f f f f f . . . . 
+. . . f f . . f f . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"7OIq3Q4Y0v|4c}b)Tyt]"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="1udI`%`2$y}[2rZu$0%_"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="`x4EIyv#N|nM{+|F.haJ"><comment pinned="false" h="66" w="443">Set the sprites position every time the sprite image changes</comment><value name="sprite"><block type="variables_get" id="6/;])z:.:Mx;dafw4z6B"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="hwQRdh6xZIFK)7E{b)wG"><field name="index">36</field></shadow></value><value name="y"><shadow type="positionPicker" id="sFm+7DI$Mkf19S1r!]h!"><field name="index">60</field></shadow></value><next><block type="spritesay" id="}:T~4xT)RWt,Y6WxmQF?"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><comment pinned="false" h="74" w="503">Make the sprite say something every time the sprite image changes.
+
+</comment><value name="sprite"><block type="variables_get" id="Q[0`:-QRZ(bekU9![mfJ"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="text"><shadow type="text" id="c#JaLy]X|b4kI?MjYj-)"><field name="TEXT">Hello World!</field></shadow></value><value name="millis"><shadow type="timePicker" id="C*O)i,=/ZDcUho.?VZ;;"><field name="ms">5000</field></shadow></value><next><block type="music_playable_play" id="O=z$+6@AGKq3`ZA3jWXt"><field name="playbackMode">music.PlaybackMode.UntilDone</field><comment pinned="true" h="72" w="451">Play a sound every time the sprite image changes.
+</comment><value name="toPlay"><shadow type="music_melody_playable" id="Jp3$ek~D+Z6L$EzYrs:*"><field name="melody">music.powerUp</field></shadow></value><next><block type="gamesetbackgroundcolor" id="9~zq[m[M^`!#~-5f*3ic"><comment pinned="false" h="64" w="476">Set the background color every time the sprite image changes.</comment><value name="color"><shadow type="colorindexpicker" id="q7H==uuC|IOJS6b`kpvn"><field name="index">3</field></shadow></value><next><block type="spritesetimage" id="m~wC[~v*PLUvyG@HKVhb"><comment pinned="false" h="67" w="243">Change the Sprite image</comment><value name="sprite"><block type="variables_get" id="uU|w]p}vesnKEh#5h.7U"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="img"><shadow type="screen_image_picker" id="x)$%otEoHIwWCnhwYZFf"><field name="img">img`
+. . . . f f f f f . . . . . . . 
+. . . f e e e e e f . . . . . . 
+. . f d d d d e e e f . . . . . 
+. . f d d f d d e e f f . . . . 
+. c d d d f d d e e d d f . . . 
+c d e e d d d d e e b d c . . . 
+c d d d d c d d e e b d c . . . 
+c f f f f d d d e e f c f . . . 
+. f b d f f f e e e e f . . . . 
+. f d d f e f f f e e f . . . . 
+. . f f f e e e e f f f . f f . 
+. . f e e f e e e e f f . e f . 
+. f f e e e f f f f f f f e f . 
+. f b d f e e f b b f f f e f . 
+. f d d f f e e d d b f f f f . 
+. f f f f f f f f f f f f f . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"x)$%otEoHIwWCnhwYZFf"}}</data></shadow></value><next><block type="spritesetpos" id="Y:k;CuzCjUg)r{:BHjvM"><value name="sprite"><block type="variables_get" id="F/[0RJ#2o[~1e%R4@;iL"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="EH25Xgb%bytWHDWuvGqF"><field name="index">127</field></shadow></value><value name="y"><shadow type="positionPicker" id="ozNxOP9Pfi$@5caU]-rh"><field name="index">60</field></shadow></value><next><block type="spritesay" id="MQVy^oBR3t56H/pli4:J"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="XZeuOIUjmG9J+QsWpH!d"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="text"><shadow type="text" id="V0{a=M2sNSctg7k,(4JU"><field name="TEXT">I love coding!</field></shadow></value><value name="millis"><shadow type="timePicker" id=",!?jCO8k6Q(4|:hzDMI/"><field name="ms">500</field></shadow></value><next><block type="music_playable_play" id="EieYr%_!=iT$I)BnhF9d"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_melody_playable" id=")aX@wJ#`VX{vLF=Og*fA"><field name="melody">music.beamUp</field></shadow></value><next><block type="gamesetbackgroundcolor" id="kgZAUw|KC+/U9?a0z*Bf"><value name="color"><shadow type="colorindexpicker" id="rTQXKtMrt$2A~KcWiWn3"><field name="index">7</field></shadow></value><next><block type="spritesetimage" id="4WuE?DS7VEKx/EbE-Qhs"><value name="sprite"><block type="variables_get" id="JMRckc]JJfI^xR]X0Cy9"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="img"><shadow type="screen_image_picker" id="!VG}]$P5L;9c^z|5R=x^"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . b 5 5 b . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. b b b b b 5 5 5 5 5 5 5 b . . 
+. b d 5 b 5 5 5 5 5 5 5 5 b . . 
+. . b 5 5 b 5 d 1 f 5 d 4 f . . 
+. . b d 5 5 b 1 f f 5 4 4 c . . 
+b b d b 5 5 5 d f b 4 4 4 4 b . 
+b d d c d 5 5 b 5 4 4 4 4 4 4 b 
+c d d d c c b 5 5 5 5 5 5 5 b . 
+c b d d d d d 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"!VG}]$P5L;9c^z|5R=x^"}}</data></shadow></value><next><block type="spritesetpos" id="f}OQq=$bc;O7Kxc*~CV@"><value name="sprite"><block type="variables_get" id="eGBE@T/OLT%d(t#LT6Su"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="*B-HDkB7#}(+*d*P5d`$"><field name="index">71</field></shadow></value><value name="y"><shadow type="positionPicker" id=",@=xyQK4e0hiW9aZB6Gf"><field name="index">30</field></shadow></value><next><block type="spritesay" id="LGHV_DS?$U^Z@-FP.G16"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="2{XX$axWKe[+FFTtspkD"><field name="VAR" id="hz`b4m}k5^[$Oak:`Rtf">mySprite</field></block></value><value name="text"><shadow type="text" id="2Xxe9e5fvCm-mjujBEt#"><field name="TEXT">I'm excited to learn!</field></shadow></value><value name="millis"><shadow type="timePicker" id="lOg%Cd*xn_Pnh|RU;gTY"><field name="ms">500</field></shadow></value><next><block type="music_playable_play" id="APteAoRAgYLo/P/Z(c0%"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_melody_playable" id="}F!BeMretwIH1$k/O]7u"><field name="melody">music.pewPew</field></shadow></value><next><block type="particlesStartScreenAnimation" id="NBYkFN}J9l5|x.wF_`n|"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.hearts</field><comment pinned="false" h="98" w="406">Use a screen effect at the end of your project.</comment></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
